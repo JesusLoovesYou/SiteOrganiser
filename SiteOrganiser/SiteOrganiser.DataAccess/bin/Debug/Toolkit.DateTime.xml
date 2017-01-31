@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Toolkit.DateTime</name>
+    </assembly>
+    <members>
+        <member name="M:Toolkit.DateTime.DateTimeExtensions.ToAgeString(System.DateTime)">
+            <summary>
+            Using DateTime.Today, calculates age from given date of birth.
+            </summary>
+            <param name="dob">Date of birth.</param>
+            <returns>Returns age in 'yy year(s), MM month(s) and dd day(s)' format.</returns>
+        </member>
+        <member name="M:Toolkit.DateTime.DateTimeExtensions.ToAgeString(System.DateTime,System.DateTime)">
+            <summary>
+            Calculates age from given date of birth to given target date.
+            </summary>
+            <param name="dob">Date of birth.</param>
+            <param name="targetDate">Target date.</param>
+            <returns>Returns age in 'yy year(s), MM month(s) and dd day(s)' format.</returns>
+        </member>
+        <member name="M:Toolkit.DateTime.DateTimeExtensions.ToAgeString(System.DateTime,System.DateTime,System.Globalization.CultureInfo)">
+            <summary>
+            Calculates age from given date of birth to given target date with different format if required.
+            </summary>
+            <param name="dob">Date of birth.</param>
+            <param name="targetDate">Target date.</param>
+            <param name="cultureInfo">Culture Info for language of the output Currently Tr and EN supported.</param>
+            <returns>Returns age in 'yy year(s), MM month(s) and dd day(s)' format.</returns>
+        </member>
+    </members>
+</doc>

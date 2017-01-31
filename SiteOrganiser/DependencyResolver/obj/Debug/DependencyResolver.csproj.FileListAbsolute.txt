@@ -1,0 +1,7 @@
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\DependencyResolver\bin\Debug\DependencyResolver.dll
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\DependencyResolver\bin\Debug\DependencyResolver.pdb
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\DependencyResolver\bin\Debug\Ninject.dll
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\DependencyResolver\bin\Debug\Ninject.xml
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\DependencyResolver\obj\Debug\DependencyResolver.dll
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\DependencyResolver\obj\Debug\DependencyResolver.pdb

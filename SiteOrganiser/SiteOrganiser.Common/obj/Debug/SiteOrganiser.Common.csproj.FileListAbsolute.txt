@@ -1,0 +1,5 @@
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\SiteOrganiser.Common\bin\Debug\SiteOrganiser.Common.dll
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\SiteOrganiser.Common\bin\Debug\SiteOrganiser.Common.pdb
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\SiteOrganiser.Common\obj\Debug\SiteOrganiser.Common.csprojResolveAssemblyReference.cache
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\SiteOrganiser.Common\obj\Debug\SiteOrganiser.Common.dll
+C:\Users\softwareacademy\Desktop\Vankata\SiteOrganiser\SiteOrganiser\SiteOrganiser.Common\obj\Debug\SiteOrganiser.Common.pdb

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0FDC588-C5C2-4C6D-8027-F46B22E7A008}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteOrganiser.Presentation</RootNamespace>
+    <AssemblyName>SiteOrganiser.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>..\..\packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MVP.WebForms.Business">
+      <HintPath>..\..\packages\MVP.WebForms.Presenter.0.5.2.0\lib\net45\MVP.WebForms.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="MVP.WebForms.Common">
+      <HintPath>..\..\packages\MVP.WebForms.Presenter.0.5.2.0\lib\net45\MVP.WebForms.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MVP.WebForms.DataAccess">
+      <HintPath>..\..\packages\MVP.WebForms.Presenter.0.5.2.0\lib\net45\MVP.WebForms.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="MVP.WebForms.DataAccess.Code">
+      <HintPath>..\..\packages\MVP.WebForms.Presenter.0.5.2.0\lib\net45\MVP.WebForms.DataAccess.Code.dll</HintPath>
+    </Reference>
+    <Reference Include="MVP.WebForms.Helpers">
+      <HintPath>..\..\packages\MVP.WebForms.Presenter.0.5.2.0\lib\net45\MVP.WebForms.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="MVP.WebForms.Presenter">
+      <HintPath>..\..\packages\MVP.WebForms.Presenter.0.5.2.0\lib\net45\MVP.WebForms.Presenter.dll</HintPath>
+    </Reference>
+    <Reference Include="MVP.WebForms.Presenter.Business">
+      <HintPath>..\..\packages\MVP.WebForms.Presenter.0.5.2.0\lib\net45\MVP.WebForms.Presenter.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="MVP.WebForms.Presenter.Common">
+      <HintPath>..\..\packages\MVP.WebForms.Presenter.0.5.2.0\lib\net45\MVP.WebForms.Presenter.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MVP.WebForms.Presenter.Presentation">
+      <HintPath>..\..\packages\MVP.WebForms.Presenter.0.5.2.0\lib\net45\MVP.WebForms.Presenter.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="MVP.WebForms.Presenter.TextTemplate">
+      <HintPath>..\..\packages\MVP.WebForms.Presenter.0.5.2.0\lib\net45\MVP.WebForms.Presenter.TextTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AjaxUnlockUserEditor.cs" />
+    <Compile Include="Admin\AjaxUserDeleteEditor.cs" />
+    <Compile Include="Admin\LoginEditor.cs" />
+    <Compile Include="Admin\UserAccountEditor.cs" />
+    <Compile Include="Admin\UserListEditor.cs" />
+    <Compile Include="PresenterBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration\ForgotPasswordEditor.cs" />
+    <Compile Include="Registration\ResetPasswordEditor.cs" />
+    <Compile Include="Registration\UserRegistrationEditor.cs" />
+    <Compile Include="Registration\UserVerifyEditor.cs" />
+    <Compile Include="ServerEditor.cs" />
+    <Compile Include="SiteEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiteOrganiser.Common\SiteOrganiser.Common.csproj">
+      <Project>{17E847B0-0EB7-4DF9-A4AA-45285D3A7F44}</Project>
+      <Name>SiteOrganiser.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DependencyResolver\DependencyResolver.csproj">
+      <Project>{6FF8059A-3EF1-4C9E-B401-CA7412723E2A}</Project>
+      <Name>DependencyResolver</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Package.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
